@@ -5,9 +5,99 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #553055;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App Component */
+
+.App {
+  background-color: #4c2a4c;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #eee;
+}
+
+/* Navbar Component */
+
+.navbar{
+  padding: 10px 20px;
+  text-align: center;
+  background: #6d3d6d;
+}
+.navbar h1{
+  margin: 10px 0;
+}
+
+/* BookList & BookDetails Component */
+
+.book-list{
+  padding: 20px;
+}
+
+.book-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.book-list li{
+  background: #6d3d6d;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.book-list li:hover{
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.book-list .title{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.book-list .author{
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.empty{
+  padding: 20px;
+  text-align: center;
+}
+
+/* Book Form Component */
+
+form{
+  padding: 20px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #3c1f3c;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+
+button{
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  padding: 6px 20px;
+  background: #eee;
+  cursor: pointer;
+}
+
+button:active{
+  top: 1px;
 }
